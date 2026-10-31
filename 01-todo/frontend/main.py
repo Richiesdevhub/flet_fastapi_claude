@@ -3,6 +3,8 @@ import os
 import flet as ft
 import httpx
 
+import uvicorn
+
 API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
 
 
@@ -69,3 +71,4 @@ async def main(page: ft.Page):
 
 if __name__ == "__main__":
     ft.run(main)
+    # ft.run(main, view=ft.AppView.WEB_BROWSER)
